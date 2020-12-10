@@ -20,7 +20,15 @@ export default class App {
         }
         return resultado;
     }
+    esPrimo(numero){
+        if(numero%2==0){
+            return false;
+        }else{
+            return true;
+        }
+    }
 }
 let app = new App();
 app.sumatoriaSerieUno(15);
 app.sumatoriaSerieDos(7);
+console.log(app.esPrimo(15));
