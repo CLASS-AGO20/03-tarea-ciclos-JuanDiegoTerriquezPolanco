@@ -7,6 +7,20 @@ export default class App {
         }
         return resultado;
     }
+    sumatoriaSerieDos(numero){
+        let resultado=0, i=1;
+        while(i<=numero){
+            if((i%2==0)||(i==1)){
+                resultado = resultado + (1/i);
+            }else{
+                resultado = resultado - (1/i);
+            }
+            console.log(resultado);
+            i++;
+        }
+        return resultado;
+    }
 }
 let app = new App();
 app.sumatoriaSerieUno(15);
+app.sumatoriaSerieDos(7);
