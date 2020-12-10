@@ -27,8 +27,21 @@ export default class App {
             return true;
         }
     }
+    obtenerMultiplos(inicio, fin){
+        let i=0,aux="";
+        do {
+            if((i>=inicio)&&(i<=fin)){
+                if(i%3==0){
+                    aux=aux+i;
+                }
+            }
+                i++;
+        } while (i<=fin);
+        return aux;
+    }
 }
 let app = new App();
 app.sumatoriaSerieUno(15);
 app.sumatoriaSerieDos(7);
 console.log(app.esPrimo(15));
+console.log(app.obtenerMultiplos(20,35));
